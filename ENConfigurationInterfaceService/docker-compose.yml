@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   web:
-    image: en_configuration_interface:1.0
+    image: en-configuration-interface:1.0
     build: .
     ports:
       - "9898:9898"

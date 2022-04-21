@@ -23,9 +23,9 @@ import com.tecnotree.service.RuleService;
  */
 @RestController
 @RequestMapping("/api/tecnotree")
-public class ExternalNotificationRestController {
+public class ENConfigurationInterfaceRestController {
 	
-	private final Logger logger = LoggerFactory.getLogger(ExternalNotificationRestController.class);
+	private final Logger logger = LoggerFactory.getLogger(ENConfigurationInterfaceRestController.class);
 	
 	Payload payload;
 		

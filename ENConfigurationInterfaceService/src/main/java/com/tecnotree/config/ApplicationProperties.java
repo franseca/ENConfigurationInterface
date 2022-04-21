@@ -48,7 +48,7 @@ public class ApplicationProperties {
 	
 	@Value("${service.mongodb.database}")
 	private String mongodbDatabase;
-			
+				
 	public String get(String numRule) {
 		return env.getProperty("RULE_" + numRule);
 	}
@@ -157,5 +157,4 @@ public class ApplicationProperties {
 		this.mongodbDatabase = mongodbDatabase;
 	}
 
-	
 }
