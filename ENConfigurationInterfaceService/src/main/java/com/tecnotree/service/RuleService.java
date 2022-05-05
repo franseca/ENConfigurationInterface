@@ -130,8 +130,15 @@ public class RuleService {
 						}
 						
 					}else{
-						logger.info("At least one property don't have a value. Verify the DMN properties in the rule");
-						continue;
+						//logger.info("At least one property don't have a value. Verify the DMN properties in the rule");
+						//continue;
+						
+						//SET THE ADDITIONAL INFORMATION
+						AdditionalInformation additionalInformation = new AdditionalInformation();
+						additionalInformation.setServiceName(ruleTemp.getRuleDetail().getApplicationName());
+						
+						payload.setAdditionalInformation(additionalInformation);
+						
 					}//END if(!ruleTemp.getRuleDetail().getDmn().getTable().equals("")) {
 										
 					//INVOKE THE OTHER SERVICE
@@ -180,8 +187,15 @@ public class RuleService {
 							payload = payloadTemp;
 						}
 					}else{
-						logger.info("At least one property don't have a value. Verify the DMN properties in the Rule");
-						continue;
+						//logger.info("At least one property don't have a value. Verify the DMN properties in the Rule");
+						//continue;
+						
+						//SET THE ADDITIONAL INFORMATION
+						AdditionalInformation additionalInformation = new AdditionalInformation();
+						additionalInformation.setServiceName(ruleTemp.getRuleDetail().getApplicationName());
+						
+						payload.setAdditionalInformation(additionalInformation);
+						
 					}//END if(!ruleTemp.getRuleDetail().getDmn().getTable().equals("")) {
 					
 					//INVOKE THE OTHER SERVICE
